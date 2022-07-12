@@ -1,0 +1,23 @@
+{
+  "name": "@dmikey/fastify-loggly",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "files": [
+    "dist/*.js",
+    "dist/*.d.ts"
+  ],
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@types/json-stringify-safe": "^5.0.0",
+    "@types/node-loggly-bulk": "^2.2.1",
+    "fastify": "^4.2.1",
+    "json-stringify-safe": "^5.0.1",
+    "node-loggly-bulk": "^3.0.1",
+    "pino": "^8.1.0",
+    "typescript": "^4.7.4"
+  }
+}
