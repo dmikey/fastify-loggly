@@ -10,10 +10,16 @@ yarn add @dmikey/fastify-loggly
 
 ## use
 
-```
-import { Logger } from '@dmikey/fastify-loggly`;
+- Fastify Logger Options check [Fastify Docs](https://www.fastify.io/docs/latest/Reference/Logging/)
+- Loggly Options check [node-loggly-bulk](https://github.com/loggly/node-loggly-bulk)
+
+```typescript
+import { Logger } from "@dmikey/fastify-loggly";
 
 const fastify = Fastify({
-  logger: Logger() as any,
+  logger: Logger(FastifyLoggerOptions, LogglyOptions),
 });
+
+// use the logger
+fastify.log("info", { some: "foo" });
 ```
